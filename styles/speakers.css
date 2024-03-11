@@ -12,7 +12,7 @@
 }
 
 .speaker__wrapper {
-    width: 460px;
+    max-width: 460px;
 }
 
 .speakers .main__title {
@@ -48,4 +48,10 @@
 .speaker__company,
 .speaker__bio {
     color: var(--color-text-on-secondary);
+}
+
+@media (width < 1000px) {
+    .speakers__wrapper {
+        grid-template-columns: 1fr;
+    }
 }
